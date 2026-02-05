@@ -1010,6 +1010,8 @@ footer .fdiv li {
         flex-direction: row;
         gap: 20px;
         font-size: 36px;
+        padding-top: 0px;
+        padding-right: 0px;
     }
 
     .arrow i {
