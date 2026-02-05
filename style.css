@@ -128,7 +128,6 @@ ul {
 .hero-image {
     height: 100%;
     width: 50%;
-    /* background-color: black; */
 }
 
 /* .hero-image img {
@@ -994,6 +993,8 @@ footer .fdiv li {
         left: -20px;
         width: 50px;
         height: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 10px;
     }
 
     /* .all-list {
@@ -1348,7 +1349,8 @@ footer .fdiv li {
         bottom: -20px;
         left: -20px;
         width: 50px;
-        height: 50px;
+        height: 50px; 
+    border-top-left-radius: 20px;
     }
 
     .top {
@@ -1616,6 +1618,13 @@ footer .fdiv li {
 
 @media (min-width: 1025px) and (max-width:1315px) {
 .book-right img{
-    display: none;
+    height: 500px;
+width: 500px;
+}
+.book {
+    margin-left: 100px;
+    margin-bottom: 50px;
+    gap: 100px;
+    height: auto;
 }
 }
