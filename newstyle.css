@@ -1,0 +1,380 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+#header {
+  background-image: url('image/yellow.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: clamp(280px, 35vw, 700px);
+}
+
+/* ================= NAVBAR ================= */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+#navbar img {
+  max-width: 140px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 3rem);
+  list-style: none;
+}
+
+#navbar button {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 6vw, 4rem);
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 630px;
+  width: 100%;
+}
+
+.content h1 {
+  font-family: Volkhov;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #5E6282;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* ================= BUTTON ================= */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.button button {
+  background: #F1A501;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(241,165,1,.4);
+}
+
+.button i {
+  background: #DF6951;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+/* ================= CATEGORY ================= */
+.category {
+  padding: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.category h3 {
+  color: #5E6282;
+}
+
+.category h1 {
+  font-family: Volkhov;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.all-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.list {
+  width: 180px;
+  text-align: center;
+}
+
+.list:hover {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,.1);
+}
+
+.top {
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.top-item {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card .detail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.4);
+}
+
+/* ================= BOOK ================= */
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
+}
+
+.book-left {
+  max-width: 450px;
+}
+
+.book-left h1 {
+  font-family: Volkhov;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+}
+
+.book .hi {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.book-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: clamp(3rem, 6vw, 5rem) 1rem;
+  justify-content: center;
+}
+
+.t-right h3 {
+  font-family: Volkhov;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.profile {
+  position: relative;
+}
+
+.t-left .card {
+  position: relative;
+  width: min(500px, 90vw);
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+/* KEEPING ABSOLUTE DESIGN */
+.card.c1 img {
+  position: absolute;
+  top: -40px;
+  left: -30px;
+}
+
+.card.c2 {
+  position: absolute;
+  right: -40px;
+  top: 90px;
+  z-index: -1;
+}
+
+/* ================= STRIPE ================= */
+.stripe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 1rem;
+}
+
+.set img {
+  width: 140px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.set img:hover {
+  filter: grayscale(0%);
+}
+
+/* ================= SUBSCRIBE ================= */
+.subscribe {
+  position: relative;
+  max-width: 970px;
+  margin: 5rem auto;
+  padding: clamp(2.5rem, 6vw, 4rem);
+  background: #DFD7F9;
+  border-radius: 120px 20px 20px 20px;
+  text-align: center;
+}
+
+.subscribe::after {
+  content: '';
+  position: absolute;
+  background-image: url('image/Mask Group1.png');
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  right: -180px;
+  top: 0;
+}
+
+.subscribe i {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background: #747DEF;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form input {
+  padding: 0.9rem;
+  width: 260px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form button {
+  padding: 0.9rem 1.2rem;
+  background: #DF6951;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+
+.rights {
+  text-align: center;
+  padding-bottom: 3rem;
+  color: #84829A;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .card img {
+    width: 260px;
+  }
+
+  .card.c2 {
+    position: static;
+    margin-top: 1.5rem;
+  }
+
+  .subscribe::after {
+    display: none;
+  }
+}
