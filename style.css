@@ -68,20 +68,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 40px 60px; */
     gap: 40px;
     overflow: hidden;
-    /* background-color: green; */
 
 }
 
 .content {
     width: 50%;
-    /* height: 535px; */
     margin-top: 70px;
     padding: 20px;
     margin-left: 100px;
-    /* background-color: pink; */
 }
 
 .content h1 {
@@ -119,13 +115,8 @@ ul {
     width: 50%;
 }
 
-/* .hero-image img {
-    width: 100%;
-    padding-right: 100px;
-} */
 .hero img {
     max-width: 100%;
-    /* height: auto; */
     height: 100%;
 }
 
@@ -533,7 +524,6 @@ button {
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
-
 }
 
 .card.c1 img {
@@ -576,8 +566,8 @@ button {
     color: #BCB7C2;
     gap: 20px;
     font-size: 40px;
-     padding-top: 80px;
-      padding-right: 30px;
+    padding-top: 80px;
+    padding-right: 30px;
 }
 
 .arrow i:hover {
@@ -590,8 +580,6 @@ button {
     justify-content: center;
     gap: 60px;
     padding: 40px;
-
-
 }
 
 .set img {
@@ -606,8 +594,6 @@ button {
 
 .stripe img:hover {
     filter: grayscale(0%);
-    /* background-color: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); */
 }
 
 .subscribe {
@@ -639,7 +625,7 @@ button {
 
 }
 
-.subscribe i {
+.subscribe>i {
     color: white;
     background-color: #747DEF;
     padding: 10px;
@@ -685,6 +671,29 @@ button {
     padding: 15px;
     border-radius: 10px;
     max-width: 120px;
+}
+
+.input {
+    position: relative;
+    display: inline-block;
+}
+
+.input i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5E6282;
+    pointer-events: none;
+}
+
+.input input {
+    color: #5E6282;
+    border: none;
+    padding: 15px 15px 15px 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    max-width: 280px;
 }
 
 footer {
@@ -896,8 +905,8 @@ footer .fdiv li {
         left: -20px;
         width: 50px;
         height: 50px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 10px;
     }
 
     .top {
@@ -1076,7 +1085,7 @@ footer .fdiv li {
         line-height: 25px;
     }
 
-    .subscribe i {
+    .subscribe>i {
         font-size: 15px;
         right: -15px;
         top: -15px;
@@ -1090,7 +1099,16 @@ footer .fdiv li {
 
     .form input {
         padding: 9px;
+        padding-left: 40px;
         margin-bottom: 10px;
+    }
+
+    .form .input i {
+        top: 40%;
+    }
+
+    input[type="email"]::placeholder {
+        font-size: 10px;
     }
 
     .form button {
@@ -1224,8 +1242,8 @@ footer .fdiv li {
         bottom: -20px;
         left: -20px;
         width: 50px;
-        height: 50px; 
-    border-top-left-radius: 20px;
+        height: 50px;
+        border-top-left-radius: 20px;
     }
 
     .top {
@@ -1346,17 +1364,16 @@ footer .fdiv li {
 }
 
 
-
 @media (max-width: 240px) {
-
-
     #navbar img {
         padding-right: 0;
         max-width: 120px;
         height: 30px;
         width: 70px;
     }
-
+ .card {
+    height: 50%;
+}
     .content {
         margin: 0;
         padding: 0;
@@ -1390,6 +1407,7 @@ footer .fdiv li {
     .play {
         font-size: 10px;
     }
+
     .category h1 {
         font-size: 16px;
     }
@@ -1397,7 +1415,6 @@ footer .fdiv li {
     .category h3 {
         font-size: 11px;
     }
-
 
     .card {
         min-width: 200px;
@@ -1453,7 +1470,6 @@ footer .fdiv li {
         overflow: hidden;
     }
 
-
     .subscribe i {
         font-size: 12px;
         padding: 6px;
@@ -1490,18 +1506,20 @@ footer .fdiv li {
 }
 
 @media (min-width: 1025px) and (max-width:1315px) {
-.book-right img{
-    height: 500px;
-width: 500px;
-}
-.book {
-    margin-left: 100px;
-    margin-bottom: 50px;
-    gap: 100px;
-    height: auto;
-}
-.arrow{
-      padding-top: 80px;
-      padding-right: 30px;
-}
+    .book-right img {
+        height: 500px;
+        width: 500px;
+    }
+
+    .book {
+        margin-left: 100px;
+        margin-bottom: 50px;
+        gap: 100px;
+        height: auto;
+    }
+
+    .arrow {
+        padding-top: 80px;
+        padding-right: 30px;
+    }
 }
